@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+
+
+.profile__nav {
+  margin-top: 45px;
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+
+  &-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &-span {
+      font-size: 28px;
+      line-height: 30px;
+      color: $NavFontColor;
+      font-weight: 700;
+      font-family: $newCicle;
+    }
+
+    &-badge {
+      width: 63px;
+      height: 41px;
+      border-radius: 20px;
+      background-color: #797e86;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > span {
+        font-size: 25px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: $newCicle;
+      }
+    }
+  }
+}

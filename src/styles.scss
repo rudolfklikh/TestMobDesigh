@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$blJack: 'BlackJack', sans-serif;
+$newCicle: 'NewCicle', sans-serif;
+$mainFontColor: #f56f6c;
+$ArticleFontColor: #fee1e0;
+$NavFontColor: #9da2aa;
+$BadgeFontColor: #797e86;
+
+@font-face {
+  font-family: BlackJack;
+  src: url('/assets/fonts/blackjack.otf') format('truetype');
+}
+@font-face {
+  font-family: NewCicle;
+  src: url('/assets/fonts/new-cicle.otf') format('truetype');
+}
+

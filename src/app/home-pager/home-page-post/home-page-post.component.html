@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+  <mat-sidenav  mode="push" #sidenav role='navigation' position="end">
+    <div class="hp__main-row-col-additional">
+      <img src="/assets/img/hp__main-preview.png">
+      <img src="/assets/img/hp__main-heart.png">
+      <img src="/assets/img/hp__main-trash.png">
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="row hp__main-row">
+      <div class="col col-3 hp__main-row-col">
+        <img [src]="post.imgSrc">
+      </div>
+      <div class="col col-9 hp__main-row-text">
+        <span class="hp__main-row-text-span">{{ post.timeStamp }}</span>
+        <span class="hp__main-row-text-span">by: {{ post.author }}</span>
+        <p class="hp__main-row-text-paragraph">{{ post.text }}</p>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="sidenav.toggle()">compare_arrows</mat-icon>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

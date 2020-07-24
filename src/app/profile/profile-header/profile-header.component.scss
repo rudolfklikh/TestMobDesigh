@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+
+
+.profile__header {
+  padding-top: 20px;
+
+  &-top {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+    &-img {
+      height: 220px;
+      width: 220px;
+
+      & > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 108px;
+      }
+    }
+
+    &-paragraph {
+      font-size: 29px;
+      line-height: 30px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: $newCicle;
+      text-align: center;
+
+      & > span {
+        color: $mainFontColor;
+      }
+    }
+  }
+}

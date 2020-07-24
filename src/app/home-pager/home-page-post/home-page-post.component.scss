@@ -1,0 +1,119 @@
+@import '../../../styles.scss';
+
+
+.hp__main {
+  &-row {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ffffff;
+
+    &-padding {
+      padding: 0;
+    }
+
+    &-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-swipe {
+        padding-left: 3px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-line {
+        padding: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        & > img {
+          max-height: 150px;
+        }
+      }
+      &-additional {
+        height: 100%;
+        padding-left: 0;
+        background-image: url('../../../assets/img/hp__main-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &:before {
+          content: "";
+          background-image:url('../../../assets/img/hp__main-background1.jpg');
+          background-size: 100% 100%;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0.6;
+        }
+
+        & img {
+          cursor: pointer;
+
+          &:nth-child(1) {
+            z-index: 1;
+            position: relative;
+          }
+          &:nth-child(2) {
+            margin-left: 50px;
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+
+    &-text {
+      &-span {
+        font-size: 20px;
+        line-height: 30px;
+        color: $ArticleFontColor;
+        font-weight: bold;
+        font-family: "Calibri";
+
+        &:nth-child(2) {
+          margin-left: 30px;
+        }
+      }
+
+      &-paragraph {
+        font-size: 25px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: $newCicle;
+        font-weight: 400;
+        margin: 0;
+
+        &-font {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+mat-sidenav-content {
+  background-color: $mainFontColor;
+  overflow: hidden;
+}
+mat-sidenav {
+  width: 55%;
+}
+mat-icon {
+  font-size: 40px;
+  position: absolute;
+  right: 50px;
+
+  cursor: pointer;
+}

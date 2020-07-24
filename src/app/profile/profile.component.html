@@ -1,0 +1,15 @@
+<main class="container-fluid">
+  <header class="row profile__header">
+      <app-profile-header class="app__header"></app-profile-header>
+  </header>
+
+  <nav class="row profile__nav">
+    <div class="col col-12" *ngFor="let element of profileELements$ | async">
+      <app-profile-element [element]='element' class="profile__element"></app-profile-element>
+    </div>
+  </nav>
+
+  <footer class="profile__footer">
+    <img src="/assets/img/profile__footer-signout.png">
+  </footer>
+</main>

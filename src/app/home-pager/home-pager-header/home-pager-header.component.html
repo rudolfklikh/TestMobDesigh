@@ -1,0 +1,29 @@
+<main class="row hp__wrapper-row">
+  <header class="col col-12 hp__wrapper-header">
+    <div class="menu-icon-wrapper" (click)="toggleClass($event);">
+      <div class="menu-icon" [ngClass]="{'menu-icon-active': statusToggle}"></div>
+    </div>
+    <div class="hp__wrapper-header-title">
+      <img class="hp__wrapper-header-title-img" src="/assets/img/hp__header-heart.png">
+      <span class="hp__wrapper-header-title-span">uilove</span>
+    </div>
+
+    <img src="/assets/img/hp__header-bag.png">
+  </header>
+
+  <section class="hp__wrapper-main">
+      <h1 class="hp__wrapper-main-title">Principal<span>Designer</span></h1>
+      <p class="hp__wrapper-main-paragraph">
+        who believe in simplicity.<br>
+        <span>love with UI / GUI / UX</span>
+      </p>
+  </section>
+
+  <footer class="hp__wrapper-footer">
+    <div class="hp__wrapper-footer-badge">
+      <img src="/assets/img/hp__footer-app.png">
+    </div>
+    <img src="/assets/img/hp__footer-triangle.png">
+    <img src="/assets/img/hp__footer-be.png">
+  </footer>
+</main>

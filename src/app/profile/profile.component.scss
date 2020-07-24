@@ -1,0 +1,20 @@
+@import '../../styles.scss';
+
+
+.app__header {
+  width: 100%;
+}
+
+.profile__nav {
+  margin-top: 45px;
+}
+.profile__footer {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile__element {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+<section class="container-fluid hp__wrapper">
+  <app-home-pager-header (toggleSideNav)='toggleSideNav()'></app-home-pager-header>
+</section>
+<main class="container-fluid hp__main">
+  <div class="row hp__main-row hp__main-row-padding" *ngFor="let post of profilePosts$ | async">
+    <app-home-page-post [post]='post' class="hp__post"></app-home-page-post>
+  </div>
+</main>
